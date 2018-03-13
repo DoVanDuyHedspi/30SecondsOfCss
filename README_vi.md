@@ -1,3 +1,4 @@
+**Thiếu phần Bouncing loader**
 ### Chỉnh lại Box-sizing
 Chỉnh lại box-model để `width`s và `height`s không bị ảnh hưởng bởi `border` hoặc `padding` của nó(box-model).
 #### CSS
@@ -457,7 +458,7 @@ Phần này yêu cầu 1 tập định nghĩa phức tạp để thực hiện �
 5. `position: absolute` tách phần tử mẫu ra khỏi luồng tài liệu và đặt nó ở vị trí relation với cha nó.
 6. `width: 100%` and `height: 100%` làm kích thước phần tử mẫu lấp đầy kích thước cha nó, làm nó cần bằng về kích thước.
 7. `background: inherit` khiến phần tử mẫu thừa kế quy định về góc tuyến tính trên phần tử.
-8. `top: 0.5rem` làm nhô phần tử mẫu xuống dưới cha nó.
+8. `top: 0.5rem` làm ~~nhô~~ (offsets the pseudo-element down slightly from its parent- **phần tử mẫu dịch xuống dưới**) so với cha nó.
 9. `filter: blur(0.4rem)` sẽ làm mờ phần từ mẫu để tạo bóng phía dưới.
 10. `opacity: 0.7` khiến phần tử mẫu trong suốt 1 phần
 11. `z-index: -1` đặt phần tử mẫu sau cha của nó
@@ -674,8 +675,8 @@ Thêm 1 cái dốc mờ vào phần từ tràn để biểu thị rõ hơn việ
 3. `background-image: linear-gradient(...)` thêm 1 dốc tuyến tính mờ dần từ trong suốt trên trắng (trên xuống dưới)
 4. `position: absolute` đấy phần tử mẫu ra khỏi luồng tài liệu và đặt vị trí nó relation với cha nó.
 5. `width: 240px` gán kích thước của phần tử cuộn ( con của cha có phần tử mẫu)
-6. `height: 25px` là chiều cao của phần tử mẫu mờ dốc, nên giữ nhỏ tương đối
-7. `bottom: 0` đặt vị trí phần tử mẫu dưới cùng của ch
+6. `height: 25px` là chiều cao của phần tử mẫu mờ dốc, nên giữ nhỏ tương đối (  should be kept relatively small - **cần được giữ ở mức tương đối nhỏ.**)
+7. `bottom: 0` đặt vị trí phần tử mẫu dưới cùng của cha
 8. `pointer-events: none` quy định phần tử mẫu không thể bị chọn với sự kiện chuột, cho phép chữ đắng sau vẫn có thể được chọn/ tương tác
 
 #### Trình duyệt hỗ trợ 
@@ -827,7 +828,7 @@ Nó phải cùng màu với khối được chia
 
 ### Tập font hệ thống
 
-Sử dụng font tự nhiên hệ thống để có cảm giác ứng dụng tự nhiên gần gũi hơn
+~~Sử dụng font tự nhiên hệ thống để có cảm giác ứng dụng tự nhiên gần gũi hơn~~ (Uses the native font of the operating system to get close to a native app feel - **Sử dụng phông chữ của hệ điều hành để có được cảm nhận gần giống với ứng dụng thực sự**)
 
 #### HTML
 
