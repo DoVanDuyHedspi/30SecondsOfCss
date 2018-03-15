@@ -1,3 +1,5 @@
+**Thiếu phần Bouncing loader**
+
 ### Chỉnh lại Box-sizing
 Chỉnh lại box-model để `width`s và `height`s không bị ảnh hưởng bởi `border` hoặc `padding` của nó(box-model).
 #### CSS
@@ -450,7 +452,7 @@ Tạo bóng giống như 'box-shadow' nhưng dựa trên màu của chính phầ
 
 Phần này yêu cầu 1 tập định nghĩa phức tạp để thực hiện đúng, như là phần tử mẫu sẽ được đặt ngay dưới chính nó trong khi vẫn hiện.
 
-1. `position: relative` ở phần tử cha thiết lập định nghĩa vị trí Cartesian cho các phần tử con.
+1. `position: relative` ở phần tử cha thiết lập ~~định nghĩa~~ vị trí Cartesian cho các phần tử con.
 2. `z-index: 1` thiếp lập 1 lớp định nghĩa mới
 3. `position: relative` ở phần tử con thiết lập dịnh nghĩa vị trí cho phần tử mẫu
 4. `::after` định nghĩa 1 phần tử mẫu
@@ -469,7 +471,7 @@ Phần này yêu cầu 1 tập định nghĩa phức tạp để thực hiện �
 
 ### Khắc văn bản 
 
-Tạo một hiệu ứng nơi xuât hiện văn bản được khắc vào background
+Tạo một hiệu ứng văn bản được khắc vào background
 
 #### HTML
 
